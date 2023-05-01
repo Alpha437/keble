@@ -37,7 +37,9 @@ h2 {
 h3 {
   font-size: var(--fs-h3);
 }
-h4, .description {
+h4, 
+.description,
+.testimony {
   font-size: var(--fs-cardTxt);
 }
 button {
