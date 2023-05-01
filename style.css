@@ -3,10 +3,103 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Satoshi', sans-serif;
 }
 
 img,
 svg {
   display: block;
+}
+/* || VARIABLES */
+:root {
+  --main-clr: #35977F;
+  --accent-clr: #7855FF;
+  --text-clr: #3A3A3A;
+  --light-gray-clr: #F2F2F2;
+  --black: #000;
+
+  /* || FONT SIZE */
+  --fs-btn: 15px;
+  --fs-dpt: 24px;
+  --fs-h1: 68px;
+  --fs-h2: 48px;
+  --fs-h3: 40px;
+  --fs-cardTxt: 28px;
+}
+
+/* || UTILITY */
+h1 {
+  font-size: var(--fs-h1);
+}
+h2 {
+  font-size: var(--fs-h2);
+}
+h3 {
+  font-size: var(--fs-h3);
+}
+h4, .description {
+  font-size: var(--fs-cardTxt);
+}
+button {
+  font-size: var(--fs-btn);
+}
+
+/* || NAV */
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 3rem;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  margin-right: 3rem;
+  list-style: none;
+}
+
+.nav-links li a{
+  color: var(--black);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.log_in-button {
+  border: none;
+  padding: 1rem 1.5rem;
+  border-radius: 2rem;
+  font-weight: 700;
+  background-color: var(--light-gray-clr);
+}
+
+.get_started-button {
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: none;
+  color: white;
+  font-weight: 700;
+  background-color: var(--main-clr);
+}
+
+.landingT {
+  text-align: center;
+}
+
+.landingT .heading {
+  line-height: 4rem;
+  inline-size: 1000px;
+  margin-inline: auto;
+}
+
+.landingT .description {
+  color: var(--text-clr);
+  font-weight: 500;
+  margin-top: 2rem;
 }
