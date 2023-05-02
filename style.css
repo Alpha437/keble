@@ -303,3 +303,53 @@ main {
 .pb-md h3 {
   margin-top: 3rem;
 }
+
+/* || TRACK RECORD*/
+.track-record {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.track-recordT h2 {
+  inline-size: 250px;
+}
+
+.track-records {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.record {
+  border: 5px solid var(--light-gray-clr);
+  padding: 1rem 7rem 1rem 1rem;
+  border-radius: 1rem;
+}
+
+.record img {
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.bg-card {
+  background-color: var(--card-bg);
+}
+
+.bg-blue {
+  background-color: hsla(209, 100%, 67%, 0.2);
+}
+
+.px {
+  grid-column: span 2;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  padding: .5rem;
+}
+
+.px .px-wide {
+  padding: 1rem 6rem;
+  border-radius: 1.5rem;
+  background-color: hsla(245, 100%, 97%, 1);
+}
