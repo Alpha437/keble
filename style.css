@@ -13,7 +13,9 @@ svg {
 /* || VARIABLES */
 :root {
   --main-clr: #35977F;
+  --card-bg: #EAF4F1;
   --accent-clr: #7855FF;
+  --highlight-clr: #55ADFF;
   --text-clr: #3A3A3A;
   --light-gray-clr: #F2F2F2;
   --black: #000;
@@ -43,13 +45,17 @@ h2 {
 }
 h3 {
   font-size: var(--fs-h3);
+  line-height: 48px;
 }
-h4 {
+h4,
+.testimony {
   font-size: var(--fs-cardTxt);
+  line-height: 36px;
 }
 .description,
-.testimony,
 .user-occupation {
+  font-weight: 500;
+  line-height: 28px;
   font-size: var(--fs-dpt);
 }
 .partners {
@@ -61,6 +67,7 @@ button {
 footer,
 .step-description {
   font-size: var(--fs-footer-links);
+  line-height: 28px;
 }
 
 /* || NAV */
@@ -68,7 +75,8 @@ footer,
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 3rem;
+  padding: 1rem 3rem;
+  background-color: white;
 }
 
 .nav-bar {
@@ -92,14 +100,14 @@ footer,
 
 .log_in-button {
   border: none;
-  padding: 1rem 1.5rem;
+  padding: 15px 1.5rem;
   border-radius: 2rem;
   font-weight: 700;
   background-color: var(--light-gray-clr);
 }
 
 .get_started-button {
-  padding: 1rem 2rem;
+  padding: 15px 2rem;
   border-radius: 2rem;
   border: none;
   color: white;
@@ -108,6 +116,9 @@ footer,
 }
 
 /* || MAIN */
+main {
+  padding: 5rem 3rem 2rem;
+}
 .landingT {
   text-align: center;
 }
@@ -120,7 +131,6 @@ footer,
 
 .landingT .description {
   color: var(--text-clr);
-  font-weight: 500;
   margin: 2rem 0;
 }
 
@@ -135,9 +145,10 @@ footer,
   border: 2px solid var(--light-gray-clr);
   background-color: white;
   font-weight: 700;
-  padding: 1rem 1.5rem 1rem 5.5rem;
+  padding: 15px 1.5rem 1rem 5.5rem;
   border-radius: 2rem;
 }
+
 .download img,
 .download .divider {
   position: absolute;
@@ -153,7 +164,142 @@ footer,
   top: 17px;
   left: 30px;
 }
+
 .download .playstore {
   top: 19px;
   left: 60px;
+}
+
+.hero {
+  width: 100%;
+  margin-top: 5.5rem;
+}
+
+/* || PARTNERS */
+.partners {
+  text-align: center;
+  background-color: var(--light-gray-clr);
+  padding: 3.5rem;
+}
+
+.partners_logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem 7rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.highlight {
+  color: var(--highlight-clr);
+  font-weight: 500;
+}
+
+/* || CALL TO INVEST */
+.call-to-invest {
+  text-align: center;
+  padding: 4rem;
+}
+
+.invest_rewards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  text-align:left;
+  padding-top: 5rem;
+}
+
+.invest_rewards .hero1 {
+  border-radius: 2rem;
+}
+
+.invest_rewards-text img {
+  width: 60px;
+}
+.invest_rewards-text .description {
+  margin: 2rem 0;
+}
+
+.invest_reward {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.invest_reward .description {
+  margin: 0;
+}
+
+/* || STEPS TO INVEST */
+.steps-to-invest {
+  padding: 3rem 5rem;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(2, 500px);
+  gap: 2rem;
+  padding: 4rem 0;
+}
+
+.step-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem 6.5rem 1rem 1rem;
+  background-color: var(--light-gray-clr);
+  border-radius: 1rem;
+}
+
+.step-card {
+  font-weight: 500;
+}
+
+.step-text h4{
+  margin-bottom: 1rem;
+}
+
+.steps-to-invest .hero3 {
+  width: 100%;
+}
+
+/* || SAFETY POLICY*/
+.safety-policy{
+  padding: 3rem 0;
+}
+
+.safetyT {
+  text-align: center;
+  padding-inline: 15rem;
+}
+
+.safetyT .description {
+  margin-top: 1rem;
+}
+
+.safety-cards {
+  display: flex;
+  gap: 1rem;
+  padding-inline: 3rem;
+  margin-top: 5rem;
+}
+
+.safety-card {
+  background-color: var(--card-bg);
+  border-radius: 2rem;
+  padding: 2rem;
+}
+
+.safety-card img {
+  margin-left: 1rem;
+}
+
+.safety-cardT h3 {
+  margin: 6rem 0 2rem;
+}
+
+.pb-md h3 {
+  margin-top: 3rem;
 }
