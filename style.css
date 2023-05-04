@@ -389,7 +389,6 @@ main {
   border-radius: 2rem;
   padding: 1rem 2rem;
   display: grid;
-  gap: 2rem;
   color: var(--text-clr);
   background-image: url('./Images/testimonial_card_bg.svg');
 }
@@ -597,6 +596,9 @@ footer {
   .testimonialCards {
     grid-template-columns: repeat(2, 1fr);
     padding-inline: 3rem;
+  }
+  .testimonialCard {
+    gap: 2rem;
   }
   .footerTop {
     display: grid;
