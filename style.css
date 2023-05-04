@@ -25,7 +25,7 @@ svg {
   /* || FONT SIZE */
   --fs-btn: 15px;
   --fs-dpt: 16px;
-  --fs-h1: 30px;
+  --fs-h1: 25px;
   --fs-h2: 20px;
   --fs-h3: 18px;
   --fs-cardTxt: 16px;
@@ -113,6 +113,10 @@ footer,
   color: white;
   font-weight: 700;
   background-color: var(--main-clr);
+}
+
+.menu {
+  display: none;
 }
 
 /* || MAIN */
@@ -270,6 +274,7 @@ main {
 
 .safetyT {
   text-align: center;
+  padding-inline: 1rem;
 }
 
 .safetyT .description {
@@ -280,11 +285,12 @@ main {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding-inline: 3rem;
+  padding-inline: 1rem;
   margin-top: 5rem;
 }
 
 .safety-card {
+  background-image: url('./Images/protect-card-bg.svg');
   background-color: var(--card-bg);
   border-radius: 2rem;
   padding: 2rem;
@@ -296,6 +302,7 @@ main {
 
 .safety-cardT h3 {
   margin: 6rem 0 2rem;
+  color: var(--text-clr);
 }
 
 .pb-md h3 {
@@ -318,7 +325,7 @@ main {
 }
 
 .record {
-  border: 5px solid var(--light-gray-clr);
+  border: 2px solid var(--light-gray-clr);
   border-radius: 1rem;
   width: 95%;
   margin: auto;
@@ -344,6 +351,7 @@ main {
   place-content: center;
   text-align: center;
   padding: .5rem;
+  background-image: url('./Images/major_countries-bg.svg');
 }
 
 .px .px-wide {
@@ -364,9 +372,10 @@ main {
 
 .testimonialCards {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 100%);
   gap: 2rem;
-  padding-inline: 3rem;
+  padding-inline: 1rem;
+  overflow: hidden;
 }
 
 .testimonialCard {
@@ -375,6 +384,7 @@ main {
   padding: 1rem 2rem;
   display: grid;
   gap: 2rem;
+  background-image: url('./Images/testimonial_card_bg.svg');
 }
 
 .my-lg {
@@ -419,7 +429,6 @@ footer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
-  padding-inline: 4rem;
 }
 
 .join_kebble {
@@ -441,11 +450,10 @@ footer {
   width: 100%;
 }
 
-.legal h4, 
-.company h4, 
-.contact h4 {
+.footerTop h4 {
   margin-top: 1rem;
   margin-bottom: 1.5rem;
+  color: var(--main-clr)
 }
 
 .footerTop ul {
@@ -491,6 +499,49 @@ footer {
   background-color: var(--light-gray-clr);
 }
 
+@media screen and (max-width: 500px) {
+  main {
+    padding: 1rem;
+  }
+  .partners_logo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .span-2 {
+    grid-column: span 2;
+    margin: auto;
+  }
+  .flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+  }
+  .join_kebble {
+    display: grid;
+    place-content: center;
+    grid-column: span 2;
+    text-align: center;
+  }
+  .contact {
+    grid-column: span 2;
+    display: grid;
+    place-content: center;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .landingT .heading {
+    line-height: 2rem;
+  }
+  .menu {
+    display: block;
+    font-size: 2rem;
+    border: none;
+    background-color: transparent;
+  }
+}
+
 @media screen and (min-width: 768px) {
   :root {
     --fs-btn: 15px;
@@ -513,6 +564,17 @@ footer {
   .landingT .heading {
     inline-size: 700px;
   }
+  .safety-cards {
+    padding-inline: 3rem;
+  }
+  .testimonialCards {
+    grid-template-columns: repeat(2, 1fr);
+    padding-inline: 3rem;
+  }
+  .footerTop {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -533,6 +595,9 @@ footer {
   .nav-links {
     margin-right: 2rem;
     gap: 3rem;
+  }
+  .landingT .heading {
+    inline-size: 900px;
   }
   .invest_rewards {
     grid-template-columns: repeat(2, 1fr);
