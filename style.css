@@ -164,18 +164,18 @@ main {
 }
 
 .download .divider {
-  top: 11px;
+  top: 10px;
   left: 50px;
   font-size: 25px;
 }
 
 .download .apple {
-  top: 17px;
+  top: 15px;
   left: 30px;
 }
 
 .download .playstore {
-  top: 19px;
+  top: 17px;
   left: 60px;
 }
 
@@ -414,6 +414,14 @@ main {
   background-color: white;
 }
 
+.testimonial-buttons button:hover {
+  background-color: #3A3A3A;
+}
+
+.testimonial-buttons button:hover img {
+  filter: invert(100%);
+}
+
 /* || COMMUNITY */
 .community {
   text-align: center;
@@ -446,6 +454,10 @@ footer {
   gap: 2rem;
 }
 
+.join_kebble p {
+  font-weight: 500;
+}
+
 .join_kebble .download-button {
   display: flex;
   gap: 1rem;
@@ -475,6 +487,7 @@ footer {
 .footerTop li a {
   text-decoration: none;
   color: #000;
+  font-weight: 500;
 }
 
 .footerTop li a:hover,
@@ -504,6 +517,7 @@ footer {
 }
 
 .contact a {
+  font-weight: 500;
   color: #000;
   text-decoration: none;
 }
